@@ -1,0 +1,5 @@
+services:
+  weather:
+    build: .
+    container_name: data-processor
+    env_file: .env

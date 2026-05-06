@@ -1,0 +1,6 @@
+.env
+.venv/
+__pycache__/
+output/latest_report.json
+output/cities_filtered.json
+.DS_Store
