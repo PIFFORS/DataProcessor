@@ -40,6 +40,7 @@ def main() -> None:
 
     selected = select_cities(cities)
     minimal = [to_minimal(c) for c in selected]
+    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
     with OUTPUT_PATH.open("w", encoding="utf-8") as f:
         json.dump(minimal, f, ensure_ascii=False, indent=2)
